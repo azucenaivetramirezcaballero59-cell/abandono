@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Catlandia</title>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="barra">
+    <div class="izquierda">
+      <img src="logo.png" class="logo">
+      <h2>Catlandia contra el abandono</h2>
+    </div>
+<a href="paginaAlan.html"class="activo">Adopta</a>
+      <a href="paginaAlo.html">Recomendaciones</a>
+      <a href="index.html">inicio</a>
+  <nav class="barra">
+    <div class="menu-secundario">
+    <div class="menu-secundario-inner">
+      </nav>
+</ul>
+</nav>
+</div>
+</header>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Concienticemos sobre el Abandono Animal</h1>
+      <p>Más de 4 millones de animales son abandonados cada año. Con información y apoyo, podemos cambiar su destino.</p>
+
+      <div class="botones">
+        <a href="#" class="btn">Inicio</a>
+        <a href="#" class="btn2">Adopta</a>
+         <a href="#" class="btn">Recomendacines</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <div class="intro-box">
+    <h2>Introducción: Abandono Animal</h2>
+    <p>
+      El abandono animal es una realidad que afecta a miles de mascotas que terminan viviendo sin protección, sin alimento y sin un hogar seguro. Con esta propuesta buscamos crear conciencia sobre la importancia del cuidado responsable y promover acciones que ayuden a brindarles una vida digna. Cada pequeño gesto cuenta, y juntos podemos construir una comunidad más humana y compasiva con los animales.
+    </p>
+  </div>
+
+  <!-- CAUSAS -->
+  <section id="causas" class="contenido">
+    <h2>Causas del abandono</h2>
+
+    <div class="grid">
+      <div class="card">
+        <img src="okok.webp" alt="Perritos">
+        <p>El abandono ocurre por irresponsabilidad, falta de recursos y poca educación sobre adopción responsable.</p>
+      </div>
+
+      <div class="card">
+        <img src="er.jpg" alt="Perrito">
+        <p>Muchos animales terminan en la calle por no estar esterilizados o por reproducción no controlada.</p>
+      </div>
+
+      <div class="card">
+        <img src="lokokok.jpg" alt="Perrito caminando">
+        <p>Algunos dueños se mudan, viajan o ya no quieren al animal, dejándolo a su suerte.</p>
+      </div>
+    </div>
+
+    <!-- CARRUSEL -->
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img src="lklkol.webp" alt="">
+        <p class="caption">"No abandones, ellos solo tienen tu amor."</p>
+      </div>
+
+      <div class="carousel-slide">
+        <img src="opopop.webp" alt="">
+        <p class="caption">"Un hogar cambia una vida."</p>
+      </div>
+
+      <div class="carousel-slide">
+        <img src="lokokok.jpg" alt="">
+        <p class="caption">"Ellos darían todo por ti."</p>
+      </div>
+
+      <div class="carousel-slide">
+        <img src="yuyuyy.jpg" alt="">
+        <p class="caption">"Adopta, no compres."</p>
+      </div>
+
+      <div class="carousel-slide">
+        <img src="vcfcrcrexexcfv.webp" alt="">
+        <p class="caption">"Su lealtad merece cuidado."</p>
+      </div>
+
+      <div class="carousel-slide">
+        <img src="zzsxdxddcf.webp" alt="">
+        <p class="caption">"Un pequeño gesto salva una vida."</p>
+      </div>
+
+      <!-- Flechas -->
+      <button class="carousel-btn prev">❮</button>
+      <button class="carousel-btn next">❯</button>
+
+      <!-- Puntos -->
+      <div class="carousel-indicators"></div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="form-section">
+    <h2>Contáctanos</h2>
+    <p>Ayúdanos con este problema y contesta el siguiente formulario:</p>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeydQoBUbiICNfS9yQKtlswfA9b_L9C87FDZnSty27tiuzMXA/viewform?usp=pp_url" 
+       target="_blank" 
+       class="btn-form">
+       Abrir formulario
+    </a>
+
+    <div class="info-box">
+      <h5>Información</h5>
+      <p><strong>Teléfono:</strong> +52 123 456 7890</p>
+      <p><strong>Correo:</strong> contacto@noabandones.org</p>
+      <p><strong>Ubicación:</strong> Ciudad de México, México</p>
+    </div>
+  </section>
+
+  <!-- FOOTER + CRÉDITOS -->
+  <footer class="mt-5">
+    <div class="container text-center">
+
+      <p class="mb-0">
+        &copy; <span id="year"></span> No al Abandono Animal. Unidos por una vida digna para todos los seres vivos.
+      </p>
+
+      <!-- DERECHOS / CRÉDITOS -->
+      <p class="creditos">
+        Información recopilada y adaptada con apoyo de:
+        <br>
+        <strong>• Microsoft Edge</strong> — consultas e investigación.<br>
+        <strong>• BrookStar</strong> — recursos multimedia y referencias generales.<br>
+        <em>Contenido educativo con fines informativos.</em>
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Fecha automática -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- CARRUSEL JS -->
+  <script>
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("carousel-slide");
+    const indicatorsContainer = document.querySelector(".carousel-indicators");
+
+    for (let i = 0; i < slides.length; i++) {
+      const dot = document.createElement("span");
+      dot.addEventListener("click", () => showSlide(i));
+      indicatorsContainer.appendChild(dot);
+    }
+
+    const dots = indicatorsContainer.getElementsByTagName("span");
+
+    function showSlide(n) {
+      slideIndex = n;
+      updateCarousel();
+    }
+
+    function updateCarousel() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].classList.remove("active");
+      }
+      slides[slideIndex].style.display = "block";
+      dots[slideIndex].classList.add("active");
+    }
+
+    document.querySelector(".prev").addEventListener("click", () => {
+      slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+
+    document.querySelector(".next").addEventListener("click", () => {
+      slideIndex = (slideIndex + 1) % slides.length;
+      updateCarousel();
+    });
+
+    updateCarousel();
+  </script>
+
+</body>
+</html>
+<div class="fuentes">
+  <h3>Fuentes de Información</h3>
+  <p>Información consultada mediante Microsoft Edge.</p>
+  <p>Recursos multimedia proporcionados por BrookStar.</p>
+</div>
